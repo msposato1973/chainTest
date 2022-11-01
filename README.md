@@ -160,7 +160,3 @@ Start the machine with a state of coins which get consumed as change is given ou
 
 ---
 
-
-Good Luck!
-
-#### Generated for [msposato1973](https://github.com/msposato1973) on Fri Oct 28 2022 09:23:05 GMT+0000 (Coordinated Universal Time)
