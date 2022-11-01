@@ -1,6 +1,6 @@
 # Coding Test
 
-Hi Massimo Sposato!
+Hi
 
 Software engineering is at the heart of what we do here at giffgaff. Our agile engineering teams build and support a wide variety of applications and services. These combine to create our unique user experience on the giffgaff website, enable a whole range of awesome features via modern APIs and, additionally, enable our internal teams to work in the most productive and efficient ways.
 
