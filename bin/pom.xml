@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>demo.coin</groupId>
+  <artifactId>chainTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>chanTest</name>
+  <packaging>jar</packaging>
+  <description>Coin Machine : an algorithm that takes a monetary value, calculates the fewest coins possible to make that change and return a list of how many of each coin is returned i.e......</description>
+    
+    <properties>
+	    <java.build>11</java.build>
+	    <junit.version>4.12</junit.version>
+	</properties>
+	
+   <dependencies>
+	    <dependency>
+	       <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>${junit.version}</version>
+		    <scope>test</scope>
+	    </dependency>
+	    <dependency>
+		    <groupId>pl.pragmatists</groupId>
+		    <artifactId>JUnitParams</artifactId>
+		    <version>1.1.0</version>
+		</dependency>
+</dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${java.build}</source>
+					<target>${java.build}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-failsafe-plugin</artifactId>
+	        </plugin>
+	        <plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>exec-maven-plugin</artifactId>
+			    <version>3.0.0</version>
+			    <configuration>
+			        <mainClass>%classpath chainTest.demo.main.DemoMainClass</mainClass>
+			        <arguments>
+			            <argument>253</argument>
+			            <argument>5.23</argument>
+			            <argument>2</argument>
+			        </arguments>
+			    </configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+</project>
