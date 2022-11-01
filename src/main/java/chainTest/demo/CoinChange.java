@@ -69,9 +69,9 @@ public class CoinChange {
 
 	}
 
-	public boolean isDollarCurrency() throws SensibleException {
-
-		if (getCoins().startsWith("$")) {
+	public boolean isPaundCurrencyPlus() throws SensibleException {
+		String xdigit = getCoins().substring(0, 1);
+		if (!xdigit.startsWith("£") && (!Character.isDigit(xdigit.charAt(0)))) {
 			throw new SensibleException();
 		} else {
 			return false;
@@ -83,7 +83,7 @@ public class CoinChange {
 		if (isNullValue())
 			throw new SensibleException();
 
-		isDollarCurrency();
+		isPaundCurrencyPlus();
 
 		if (!isValidationCurrency())
 			throw new SensibleException();
@@ -92,7 +92,12 @@ public class CoinChange {
 			List<String> items = Stream.of(getCoins().split("\\.")).map(String::trim).collect(Collectors.toList());
 
 			minCoins(setPounds, Integer.parseInt(items.get(0)), POUND);
-			minCoins(setPenny, Integer.parseInt(items.get(1)) * 10, PENNY);
+			
+			
+			if(items.get(1).length()>1)
+				minCoins(setPenny, Integer.parseInt(items.get(1)), PENNY);
+			else 
+				minCoins(setPenny, Integer.parseInt(items.get(1)) * 10, PENNY);
 
 		} else {
 

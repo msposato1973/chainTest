@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="12" failures="0" name="chainTest.demo.CoinChangeTest" time="0.017" errors="0" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.16+8"/>
+    <property name="sun.boot.library.path" value="/Users/massimo.sposato/Library/Java/JavaVirtualMachines/temurin-11.0.16/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/massimo.sposato/Documents/STS-WS/chainTest"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/massimo.sposato/Documents/STS-WS/chainTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.16+8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/fb/bkf8wl0x4rv80y4pfl3cj2k40000gq/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/massimo.sposato/Documents/STS-WS/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7259594096575359074.tmp"/>
+    <property name="jansi.force" value="true"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/massimo.sposato/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.6"/>
+    <property name="user.home" value="/Users/massimo.sposato"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="massimo.sposato"/>
+    <property name="java.class.path" value="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_3.8.601.20220820-1147/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always install -Dstyle.color=always -Dstyle.color=always"/>
+    <property name="java.home" value="/Users/massimo.sposato/Library/Java/JavaVirtualMachines/temurin-11.0.16/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.16"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="/Users/massimo.sposato/Documents/STS-WS/chainTest/EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-11.0.16+8"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isPaundCurrency" time="0.002"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_fewestCoins_EX" time="0"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_minCoins2" time="0.007"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isDollarCurrency_ex" time="0"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isFloat_ex" time="0.003"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_fewestCoins253DollarEx" time="0"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isFloat" time="0"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isEurCurrency_ex" time="0.001"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_fewestCoins" time="0.001"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_fewestCoins_253" time="0.001"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_isNoPaundNoDollarCurrency" time="0.001"/>
+  <testcase classname="chainTest.demo.CoinChangeTest" name="test_minCoins" time="0.001"/>
+</testsuite>

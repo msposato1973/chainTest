@@ -43,7 +43,14 @@ public class CoinChangeTest {
 	public void test_isDollarCurrency_ex() throws SensibleException {
 		String coins = "$23";
 
-		new CoinChange(coins).isDollarCurrency();
+		new CoinChange(coins).isPaundCurrencyPlus();
+	}
+	
+	@Test(expected = SensibleException.class)
+	public void test_isEurCurrency_ex() throws SensibleException {
+		String coins = "€23";
+
+		new CoinChange(coins).isPaundCurrencyPlus();
 	}
 
 	@Test
